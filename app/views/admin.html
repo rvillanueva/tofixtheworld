@@ -1,0 +1,70 @@
+  <div class="row">
+  <h1>Admin Panel</h1>
+  <div class="col-lg-6">
+    <div class="well bs-component">
+      <form class="form-horizontal" id="ingredientForm" name="ingredientForm" novalidate>
+        <fieldset>
+          <legend>Add New Ingredient</legend>
+          <div class="form-group">
+            <label for="ingredientType" class="col-lg-2 control-label">Ingredient Type</label>
+            <div class="col-lg-10">
+              <select class="form-control" id="ingredientType" ng-model="ingredient.type">
+                <option value="principles">Principle</option>
+                <option value="challenges">Challenge</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ingredientName" class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="ingredientName" ng-model="ingredient.name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Hint 1</label>
+            <div class="col-lg-6">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[1].desc"></textarea>
+            </div>
+            <div class="col-lg-4">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[1].link" placeholder="Link"></textarea>
+            </div>
+            <label for="textArea" class="col-lg-2 control-label">Hint 2</label>
+            <div class="col-lg-6">
+              <textarea class="form-control" rows="3" id="hint2" ng-model="ingredient.hints[2].desc"></textarea>
+            </div>
+            <div class="col-lg-4">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[2].link" placeholder="Link"></textarea>
+            </div>
+            <label for="textArea" class="col-lg-2 control-label">Hint 3</label>
+            <div class="col-lg-6">
+              <textarea class="form-control" rows="3" id="hint3" ng-model="ingredient.hints[3].desc"></textarea>
+            </div>
+            <div class="col-lg-4">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[3].link" placeholder="Link"></textarea>
+            </div>
+            <label for="textArea" class="col-lg-2 control-label">Hint 4</label>
+            <div class="col-lg-6">
+              <textarea class="form-control" rows="3" id="hint4" ng-model="ingredient.hints[4].desc"></textarea>
+            </div>
+            <div class="col-lg-4">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[4].link" placeholder="Link"></textarea>
+            </div>
+            <label for="textArea" class="col-lg-2 control-label">Hint 5</label>
+            <div class="col-lg-6">
+              <textarea class="form-control" rows="3" id="hint5" ng-model="ingredient.hints[5].desc"></textarea>
+            </div>
+            <div class="col-lg-4">
+              <textarea class="form-control" rows="3" id="hint1" ng-model="ingredient.hints[5].link" placeholder="Link"></textarea>
+            </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button class="btn btn-primary" ng-click="submitData()" ng-disabled="ingredientForm.$invalid">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    &nbsp;
+  </div>
+  &nbsp;
+</div>

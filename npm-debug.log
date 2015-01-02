@@ -1,0 +1,194 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-angularfire' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'generator-angularfire', null ]
+5 verbose cache add name=undefined spec="generator-angularfire" args=["generator-angularfire",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'generator-angularfire',
+6 verbose parsed url   path: 'generator-angularfire',
+6 verbose parsed url   href: 'generator-angularfire' }
+7 silly lockFile e5f62a10-generator-angularfire generator-angularfire
+8 verbose lock generator-angularfire /Users/ryanvillanueva/.npm/e5f62a10-generator-angularfire.lock
+9 silly lockFile e5f62a10-generator-angularfire generator-angularfire
+10 silly lockFile e5f62a10-generator-angularfire generator-angularfire
+11 verbose addNamed [ 'generator-angularfire', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 46fe520b-generator-angularfire generator-angularfire@
+14 verbose lock generator-angularfire@ /Users/ryanvillanueva/.npm/46fe520b-generator-angularfire.lock
+15 silly addNameRange { name: 'generator-angularfire', range: '*', hasData: false }
+16 verbose request where is /generator-angularfire
+17 verbose request registry http://registry.npmjs.org/
+18 verbose request id 0acb8e396d058c00
+19 verbose url raw /generator-angularfire
+20 verbose url resolving [ 'http://registry.npmjs.org/', './generator-angularfire' ]
+21 verbose url resolved http://registry.npmjs.org/generator-angularfire
+22 verbose request where is http://registry.npmjs.org/generator-angularfire
+23 info trying registry request attempt 1 at 17:25:27
+24 http GET http://registry.npmjs.org/generator-angularfire
+25 http 200 http://registry.npmjs.org/generator-angularfire
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"C7WZW40OVH7Z75UGV9PAMBYU5"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '24872',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Fri, 02 Jan 2015 01:25:28 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-sjc3128-SJC',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1420161927.941347,VS0,VE440',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'generator-angularfire', range: '*', hasData: true }
+28 silly addNameRange versions [ 'generator-angularfire',
+28 silly addNameRange   [ '0.0.2',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.8.2-1',
+28 silly addNameRange     '0.8.2-2',
+28 silly addNameRange     '0.8.2-4',
+28 silly addNameRange     '0.8.2-5',
+28 silly addNameRange     '0.8.2-6',
+28 silly addNameRange     '0.8.2-7' ] ]
+29 verbose addNamed [ 'generator-angularfire', '0.8.2-7' ]
+30 verbose addNamed [ '0.8.2-7', '0.8.2-7' ]
+31 silly lockFile e90a5204-generator-angularfire-0-8-2-7 generator-angularfire@0.8.2-7
+32 verbose lock generator-angularfire@0.8.2-7 /Users/ryanvillanueva/.npm/e90a5204-generator-angularfire-0-8-2-7.lock
+33 silly lockFile 4a5957b1-enerator-angularfire-0-8-2-7-tgz http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+34 verbose lock http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz /Users/ryanvillanueva/.npm/4a5957b1-enerator-angularfire-0-8-2-7-tgz.lock
+35 verbose addRemoteTarball [ 'http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz',
+35 verbose addRemoteTarball   '36f0f4030bcc501854a5aa402341c46c8111d5d6' ]
+36 info retry fetch attempt 1 at 17:25:28
+37 verbose fetch to= /var/folders/nq/ntlgw4f97z3cqwfsgpz6stv40000gn/T/npm-47877-LAkh1ThN/registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+38 http GET http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+39 http 200 http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+40 silly lockFile 4a5957b1-enerator-angularfire-0-8-2-7-tgz http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+41 silly lockFile 4a5957b1-enerator-angularfire-0-8-2-7-tgz http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz
+42 silly lockFile e90a5204-generator-angularfire-0-8-2-7 generator-angularfire@0.8.2-7
+43 silly lockFile e90a5204-generator-angularfire-0-8-2-7 generator-angularfire@0.8.2-7
+44 silly lockFile 46fe520b-generator-angularfire generator-angularfire@
+45 silly lockFile 46fe520b-generator-angularfire generator-angularfire@
+46 silly resolved [ { name: 'generator-angularfire',
+46 silly resolved     version: '0.8.2-7',
+46 silly resolved     description: 'Yeoman generator for Angular+Firebase',
+46 silly resolved     keywords:
+46 silly resolved      [ 'yeoman-generator',
+46 silly resolved        'scaffold',
+46 silly resolved        'framework',
+46 silly resolved        'component',
+46 silly resolved        'front-end',
+46 silly resolved        'app',
+46 silly resolved        'angular',
+46 silly resolved        'firebase' ],
+46 silly resolved     author: { name: 'Kato', url: 'with thanks to Yeoman team' },
+46 silly resolved     main: 'app/index.js',
+46 silly resolved     files:
+46 silly resolved      [ 'app',
+46 silly resolved        'common',
+46 silly resolved        'constant',
+46 silly resolved        'controller',
+46 silly resolved        'decorator',
+46 silly resolved        'directive',
+46 silly resolved        'factory',
+46 silly resolved        'filter',
+46 silly resolved        'main',
+46 silly resolved        'provider',
+46 silly resolved        'route',
+46 silly resolved        'service',
+46 silly resolved        'templates',
+46 silly resolved        'value',
+46 silly resolved        'view',
+46 silly resolved        'script-base.js',
+46 silly resolved        'util.js',
+46 silly resolved        'angularfire' ],
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'https://github.com/firebase/generator-angularfire' },
+46 silly resolved     scripts: { test: 'mocha' },
+46 silly resolved     dependencies:
+46 silly resolved      { wiredep: '^1.0.0',
+46 silly resolved        'yeoman-generator': '^0.16.0',
+46 silly resolved        yosay: '^0.2.0',
+46 silly resolved        chalk: '^0.4.0' },
+46 silly resolved     peerDependencies: { 'generator-karma': '>=0.8.2', yo: '>=1.0.0' },
+46 silly resolved     devDependencies:
+46 silly resolved      { grunt: '~0.4.1',
+46 silly resolved        'grunt-contrib-jshint': '~0.8.0',
+46 silly resolved        'grunt-conventional-changelog': '~1.1.0',
+46 silly resolved        'grunt-release': '~0.6.0',
+46 silly resolved        'load-grunt-tasks': '~0.3.0',
+46 silly resolved        mocha: '*',
+46 silly resolved        semver: '~2.3.0',
+46 silly resolved        'underscore.string': '~2.3.1' },
+46 silly resolved     engines: { node: '>=0.10.0', npm: '>=1.2.10' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     gitHead: 'e97f23536c3c6c8c9246d448c97a5bbf56402872',
+46 silly resolved     bugs: { url: 'https://github.com/firebase/generator-angularfire/issues' },
+46 silly resolved     homepage: 'https://github.com/firebase/generator-angularfire',
+46 silly resolved     _id: 'generator-angularfire@0.8.2-7',
+46 silly resolved     _shasum: '36f0f4030bcc501854a5aa402341c46c8111d5d6',
+46 silly resolved     _from: 'generator-angularfire@',
+46 silly resolved     _npmVersion: '1.4.26',
+46 silly resolved     _npmUser: { name: 'katowulf', email: 'katowulf@gmail.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '36f0f4030bcc501854a5aa402341c46c8111d5d6',
+46 silly resolved        tarball: 'http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'http://registry.npmjs.org/generator-angularfire/-/generator-angularfire-0.8.2-7.tgz' } ]
+47 info install generator-angularfire@0.8.2-7 into /usr/local/lib
+48 info installOne generator-angularfire@0.8.2-7
+49 verbose lib/node_modules/generator-angularfire unbuild
+50 verbose tar unpack /Users/ryanvillanueva/.npm/generator-angularfire/0.8.2-7/package.tgz
+51 silly lockFile d0085aa3-de-modules-generator-angularfire tar:///usr/local/lib/node_modules/generator-angularfire
+52 verbose lock tar:///usr/local/lib/node_modules/generator-angularfire /Users/ryanvillanueva/.npm/d0085aa3-de-modules-generator-angularfire.lock
+53 silly lockFile e40d1ba0--angularfire-0-8-2-7-package-tgz tar:///Users/ryanvillanueva/.npm/generator-angularfire/0.8.2-7/package.tgz
+54 verbose lock tar:///Users/ryanvillanueva/.npm/generator-angularfire/0.8.2-7/package.tgz /Users/ryanvillanueva/.npm/e40d1ba0--angularfire-0-8-2-7-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-angularfire'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-angularfire']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/generator-angularfire',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/generator-angularfire',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "generator-angularfire"
+60 error cwd /Users/ryanvillanueva/tofixtheworld
+61 error node -v v0.10.35
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/generator-angularfire
+64 error fstream_path /usr/local/lib/node_modules/generator-angularfire
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-angularfire'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
