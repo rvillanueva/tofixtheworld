@@ -5,16 +5,24 @@
   <div class="col-lg-4">
     <p>I would use principles from</p>
     <div class="panel" ng-model"scope">
-      <div class="panel-body lead">
-        {{currentprinciples.name}}
+      <div class="panel-body ingredientCard">
+        {{currentPrinciple.name}}
+      </div>
+      <div class="panel-footer">
+        <a href="javascript:void(0)" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></a>
+        <a href="javascript:void(0)" class="btn btn-default btn-sm">Hint</a>
       </div>
     </div>
   </div>
   <div class="col-lg-4">
     <p>to solve</p>
-    <div class="panel lead" ng-model"scope">
-      <div class="panel-body">
-        {{currentchallenges.name}}
+    <div class="panel" ng-model"scope">
+      <div class="panel-body ingredientCard">
+        {{currentChallenge.name}}
+      </div>
+      <div class="panel-footer">
+        <a href="javascript:void(0)" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></a>
+        <a href="javascript:void(0)" class="btn btn-default btn-sm">Hint</a>
       </div>
     </div>
   </div>
@@ -27,7 +35,9 @@
           <span class="material-input"></span>
         </div>
       </div>
-      <a href="javascript:void(0)" class="btn btn-xs btn-primary">Submit</a>
+      <div class="panel-footer">
+        <a href="javascript:void(0)" class="btn btn-primary">Submit</a>
+      </div>
     </div>
   </div>
   &nbsp;
