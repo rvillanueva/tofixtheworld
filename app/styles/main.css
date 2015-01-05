@@ -46,6 +46,10 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.jumbotron h1 {
+  font-family: 'Lobster Two', cursive;
+}
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
@@ -75,5 +79,17 @@ body {
 
 .ingredientCard {
   font-size: 24px;
-  font-weight: 500;
+}
+
+.ingredientCard header {
+  font-color: #000000;
+}
+
+.ideaCard {
+  text-align: left;
+}
+
+.hints {
+  font-size: 14px;
+  text-align: left;
 }

@@ -1,44 +1,86 @@
 <div class="jumbotron">
   <h1>To fix the world...</h1>
   <p><a class="btn btn-lg btn-success" ng-click="generateRandomSet()">Generate <span class="glyphicon glyphicon-refresh"></span></a></p>
-  <div class="row"></div>
-  <div class="col-lg-4">
-    <p>I would use principles from</p>
-    <div class="panel" ng-model"scope">
-      <div class="panel-body ingredientCard">
-        {{currentPrinciple.name}}
-      </div>
-      <div class="panel-footer">
-        <a href="javascript:void(0)" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></a>
-        <a href="javascript:void(0)" class="btn btn-default btn-sm">Hint</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <p>to solve</p>
-    <div class="panel" ng-model"scope">
-      <div class="panel-body ingredientCard">
-        {{currentChallenge.name}}
-      </div>
-      <div class="panel-footer">
-        <a href="javascript:void(0)" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-chevron-down"></span></a>
-        <a href="javascript:void(0)" class="btn btn-default btn-sm">Hint</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4">
-    <p>by</p>
-    <div class="panel">
-      <div class="panel-body">
-        <div class="form-control-wrapper">
-          <textarea class="form-control col-lg-12 empty" rows="3" id="ideaText" placeholder="Imagine here"></textarea>
-          <span class="material-input"></span>
+  <br>
+  <div class="row">
+    <div class="col-lg-4">
+      <p class="lead">I would use principles from</p>
+      <div class="panel" ng-model"scope">
+        <div class="panel-body ingredientCard">
+          {{currentPrinciple.name}}
+          <div class="hints" ng-repeat="hint in currentPrinciple.hints" ng-if="$index < pHintNum">
+            {{hint.desc}} <a href={{hint.link}} target="_blank"><span class="glyphicon glyphicon-info-sign"></span></a><br><br>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="dropdown pull-left">
+            <a class="btn btn-default dropdown-toggle btn-sm" type="button" id="principleSelect" data-toggle="dropdown" aria-expanded="true">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="principleSelect">
+              <li role="presentation" ng-repeat="(key, principle) in principles"><a role="menuitem" tabindex="-1" ng-click="selectPrinciple(key)">{{principle.name}}</a></li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-success btn-sm" ng-click="addHint('principle');" ng-disabled="!currentPrinciple.hints[pHintNum]"><span class="glyphicon glyphicon-exclamation-sign"></span> Hint</a>
+          <a href="javascript:void(0)" class="btn btn-default btn-sm pull-right"><span class="glyphicon glyphicon-lock"></span></a>
         </div>
       </div>
-      <div class="panel-footer">
-        <a href="javascript:void(0)" class="btn btn-primary">Submit</a>
+    </div>
+    <div class="col-lg-4">
+      <p class="lead">to improve</p>
+      <div class="panel" ng-model"scope">
+        <div class="panel-body ingredientCard">
+          {{currentChallenge.name}}
+          <div class="hints" ng-repeat="hint in currentChallenge.hints" ng-if="$index < cHintNum">
+            {{hint.desc}} <span ng-if="hint.link"><a href={{hint.link}} target="_blank"><span class="glyphicon glyphicon-info-sign"></span></a></span><br><br>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <div class="dropdown pull-left">
+            <a class="btn btn-default dropdown-toggle btn-sm" type="button" id="challengeSelect" data-toggle="dropdown" aria-expanded="true">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="challengeSelect">
+              <li role="presentation" ng-repeat="(key, challenge) in challenges"><a role="menuitem" tabindex="-1" ng-click="selectChallenge(key)">{{challenge.name}}</a></li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-success btn-sm" ng-click="addHint('challenge');" ng-disabled="!currentChallenge.hints[cHintNum]"><span class="glyphicon glyphicon-exclamation-sign"></span> Hint</a>
+          <a href="javascript:void(0)" class="btn btn-default btn-sm pull-right"><span class="glyphicon glyphicon-lock"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <p class="lead">by</p>
+      <div class="panel">
+        <div class="panel-body">
+          <div class="form-control-wrapper">
+            <form class="form-horizontal" id="ideaForm" name="ideaForm" novalidate>
+              <textarea class="form-control col-lg-12 empty" rows="3" id="ideaText" ng-model="ideaText" placeholder="Insert imagination here" required></textarea>
+              <span class="material-input"></span>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <a href="javascript:void(0)" class="btn btn-primary" ng-click="submitIdea()" ng-disabled="ideaForm.$invalid">Submit</a>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-  &nbsp;
+  <br>
+  <div class="row">
+    <h3>Ideas</h3>
+    <br>
+    <div ng-repeat="idea in ideas">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="panel panel-primary ideaCard">
+          <div class="panel-heading">Using <strong>{{principles[idea.principle].name}}</strong> to improve <strong>{{challenges[idea.challenge].name}}</strong></div>
+          <div class="panel-body">
+            {{idea.desc}}
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
 </div>

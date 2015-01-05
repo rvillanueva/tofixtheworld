@@ -17,6 +17,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
   </head>
   <body ng-app="tofixtheworldApp">
     <!--[if lt IE 7]>
@@ -25,7 +26,7 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="bs-component">
+    <!--  <div class="bs-component">
         <div class="navbar navbar-inverse">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -43,11 +44,12 @@
           </div>
         </div>
       </div>
+    -->
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> Happy New Year!</p>
+        &copy; 2015 <a href="https://www.linkedin.com/in/RyanjVillanueva">Ryan Villanueva</a>. Happy New Year!</p>
       </div>
     </div>
 
@@ -59,7 +61,7 @@
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       ga('create', 'UA-11058894-3', 'auto');
        ga('send', 'pageview');
     </script>
 
@@ -96,6 +98,7 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/admin.js"></script>
         <script src="scripts/services/getrandomingredient.js"></script>
+        <script src="scripts/services/ideafactory.js"></script>
         <!-- endbuild -->
 </body>
 </html>

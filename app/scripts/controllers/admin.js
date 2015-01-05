@@ -13,6 +13,10 @@ angular.module('tofixtheworldApp')
       type: 'principles',
       name: null,
       hints: {
+        0: {
+          desc: null,
+          link: null
+        },
         1: {
           desc: null,
           link: null
@@ -29,10 +33,6 @@ angular.module('tofixtheworldApp')
           desc: null,
           link: null
         },
-        5: {
-          desc: null,
-          link: null
-        },
       }
     };
 
@@ -46,7 +46,7 @@ angular.module('tofixtheworldApp')
     $scope.ingredientForm.$setPristine();
   };
 
-  $scope.submitData = function ()
+  $scope.submitData = function ($firebase)
     {
       var messageListRef = new Firebase('https://incandescent-torch-665.firebaseio.com/' + $scope.ingredient.type);
       messageListRef.push({
@@ -55,5 +55,5 @@ angular.module('tofixtheworldApp')
         'hints': $scope.ingredient.hints
       });
       $scope.resetForm();
-    }
+    };
   });
